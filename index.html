@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GOOD PACE — Athlete Management</title>
+<meta name="description" content="GOOD PACE accompagne les athlètes au-delà de leur performance : community management, brand partnerships et une communauté, les Good Pacers.">
+<link rel="canonical" href="https://goodpace.ch/">
+<meta name="theme-color" content="#FAF6EF">
+
+<!-- Aperçu affiché quand le lien est partagé (WhatsApp, Instagram, LinkedIn, iMessage…) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GOOD PACE">
+<meta property="og:title" content="GOOD PACE — Athlete Management">
+<meta property="og:description" content="Nous accompagnons les athlètes bien au-delà de la ligne d'arrivée : community management, brand partnerships et une communauté, les Good Pacers.">
+<meta property="og:url" content="https://goodpace.ch/">
+<meta property="og:image" content="https://goodpace.ch/assets/img/partage.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="fr_CH">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+<link rel="preload" href="assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/archivo-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"GOOD PACE",
+  "description":"Athlete management : community management, brand partnerships et communauté pour les athlètes.",
+  "url":"https://goodpace.ch/",
+  "logo":"https://goodpace.ch/assets/img/apple-touch-icon.png",
+  "email":"hello@goodpace.ch",
+  "address":{"@type":"PostalAddress","addressCountry":"CH"},
+  "sameAs":["https://www.instagram.com/goodpace.ch/"]
+}
+</script>
+
+<style>
+/* ---------- polices, hébergées avec le site (plus rien n'est chargé depuis Google) ---------- */
+@font-face{font-family:"Instrument Serif"; font-style:normal; font-weight:400; font-display:swap;
+  src:url(assets/fonts/instrument-serif-latin-ext-400-normal.woff2) format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Instrument Serif"; font-style:normal; font-weight:400; font-display:swap;
+  src:url(assets/fonts/instrument-serif-latin-400-normal.woff2) format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Instrument Serif"; font-style:italic; font-weight:400; font-display:swap;
+  src:url(assets/fonts/instrument-serif-latin-ext-400-italic.woff2) format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Instrument Serif"; font-style:italic; font-weight:400; font-display:swap;
+  src:url(assets/fonts/instrument-serif-latin-400-italic.woff2) format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Archivo"; font-style:normal; font-weight:100 900; font-display:swap;
+  src:url(assets/fonts/archivo-latin-ext-wght-normal.woff2) format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Archivo"; font-style:normal; font-weight:100 900; font-display:swap;
+  src:url(assets/fonts/archivo-latin-wght-normal.woff2) format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+:root{
+  /* terre, sable, écru — et l'orange de la pastille du logo */
+  --paper:#FAF6EF;
+  --sand:#EFE5D5;
+  --terre:#3E2E22;
+  --clay:#C25B34;        /* la pastille : traits, pastilles, grands titres */
+  --clay-deep:#A8481F;   /* même orange, assombri pour rester lisible en petit */
+  --clay-soft:#E58C63;   /* orange éclairci pour les fonds sombres */
+  --ink:#241C16;
+  --ink-2:rgba(36,28,22,.72);
+  --ink-3:rgba(36,28,22,.56);
+  --line:rgba(36,28,22,.16);
+  --cream-2:rgba(250,246,239,.78);
+  --line-dark:rgba(250,246,239,.2);
+
+  --gut:clamp(20px,5vw,84px);
+  --sect:clamp(72px,11vh,144px);
+  --maxw:1520px;
+  --serif:"Instrument Serif", Georgia, "Times New Roman", serif;
+  --sans:"Archivo","Helvetica Neue",Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%; scroll-padding-top:66px}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--sans); font-weight:400;
+  font-size:clamp(16px,1.05vw,18px); line-height:1.65;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+img{max-width:100%; height:auto; display:block}
+figure{margin:0}
+a{color:inherit}
+::selection{background:var(--clay); color:var(--paper)}
+:focus-visible{outline:2px solid var(--clay); outline-offset:3px; border-radius:2px}
+.skip{position:absolute; left:-9999px; top:8px; z-index:200; background:var(--ink); color:var(--paper); padding:.7em 1.1em; border-radius:999px; text-decoration:none}
+.skip:focus{left:var(--gut)}
+
+/* ---------- typographie ---------- */
+h1,h2,h3,h4{margin:0; font-weight:400}
+.d1,.d2,.d3,.d4{font-family:var(--serif); letter-spacing:-.015em; line-height:1.02; text-wrap:balance}
+.d1{font-size:clamp(3rem,8vw,7rem)}
+.d2{font-size:clamp(2.2rem,4.8vw,4.2rem); line-height:1.04}
+.d3{font-size:clamp(1.8rem,3.2vw,2.9rem); line-height:1.06}
+.d4{font-size:clamp(1.35rem,2vw,1.9rem); line-height:1.12}
+.it{font-style:italic}
+.hl{color:var(--clay)}
+.on-dark .hl{color:var(--clay-soft)}
+.kicker{display:block; margin:0 0 1.1em; font-size:.88rem; font-weight:500; color:var(--clay-deep)}
+.on-dark .kicker{color:var(--clay-soft)}
+.lede{font-size:clamp(1.12rem,1.5vw,1.4rem); line-height:1.45; max-width:38ch; font-weight:350}
+p{max-width:62ch; margin:0 0 1.1em; text-wrap:pretty}
+.small{font-size:.88rem}
+.muted{color:var(--ink-2)}
+.on-dark .muted{color:var(--cream-2)}
+.quote{font-family:var(--serif); font-size:clamp(1.7rem,3.2vw,2.8rem); line-height:1.14; max-width:27ch; margin:0; letter-spacing:-.01em}
+
+/* ---------- structure ---------- */
+.wrap{padding-inline:var(--gut); max-width:var(--maxw); margin-inline:auto}
+.sect{padding-block:var(--sect)}
+.on-dark{background:var(--terre); color:var(--paper)}
+.on-sand{background:var(--sand)}
+.center{text-align:center}
+.center > *{margin-inline:auto}
+.cols{display:grid; grid-template-columns:1fr; gap:clamp(28px,4.5vw,72px)}
+@media(min-width:900px){
+  .c2{grid-template-columns:1fr 1fr}
+  .c-side{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}
+  .c-side-r{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}
+  .c-top{align-items:start}
+  .c-mid{align-items:center}
+}
+.photo{width:100%; object-fit:cover; border-radius:6px; background:var(--sand)}
+.r45{aspect-ratio:4/5} .r169{aspect-ratio:16/9}
+
+/* ---------- boutons et liens ---------- */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; text-decoration:none; cursor:pointer;
+  background:var(--clay-deep); color:var(--paper); border:1px solid var(--clay-deep);
+  padding:.95em 1.7em; border-radius:999px;
+  font-family:var(--sans); font-weight:600; font-size:.94rem; line-height:1.2; white-space:nowrap;
+  transition:background .2s ease, color .2s ease, border-color .2s ease;
+}
+.btn:hover{background:var(--ink); border-color:var(--ink)}
+.on-dark .btn{background:var(--paper); border-color:var(--paper); color:var(--terre)}
+.on-dark .btn:hover{background:var(--clay-soft); border-color:var(--clay-soft); color:var(--ink)}
+.btn-line{background:transparent; color:var(--ink); border-color:rgba(36,28,22,.32)}
+.btn-line:hover{background:var(--ink); color:var(--paper); border-color:var(--ink)}
+.link{
+  display:inline-block; text-decoration:none; font-weight:600; font-size:.94rem;
+  padding-bottom:.3em; border-bottom:1.5px solid var(--clay); transition:color .2s ease;
+}
+.link:hover{color:var(--clay-deep)}
+.on-dark .link{border-color:var(--clay-soft)}
+.on-dark .link:hover{color:var(--clay-soft)}
+
+/* ---------- navigation ---------- */
+.nav{
+  position:fixed; inset:0 0 auto 0; z-index:80;
+  display:flex; align-items:center; justify-content:space-between; gap:20px;
+  padding:14px var(--gut);
+  background:rgba(250,246,239,.92); backdrop-filter:blur(16px) saturate(1.2); -webkit-backdrop-filter:blur(16px) saturate(1.2);
+  border-bottom:1px solid var(--line);
+  transition:background .3s ease, border-color .3s ease;
+}
+.nav.over-hero{background:transparent; border-color:transparent; backdrop-filter:none; -webkit-backdrop-filter:none}
+.nav-logo{transition:opacity .3s ease; flex:none}
+.nav-logo img{height:clamp(32px,3vw,42px); width:auto}
+.nav.over-hero .nav-logo{opacity:0; pointer-events:none}
+.nav-right{display:flex; align-items:center; gap:clamp(12px,1.6vw,28px)}
+.nav-links{display:none; gap:clamp(16px,1.7vw,30px); align-items:center; margin:0; padding:0}
+.nav-links > li{position:relative; list-style:none}
+.nav-links a, .nav-trigger{
+  background:none; border:0; padding:8px 0; cursor:pointer; color:inherit; font:inherit;
+  text-decoration:none; font-size:.92rem; font-weight:500; white-space:nowrap;
+}
+.nav-links > li > a, .nav-trigger{border-bottom:1.5px solid transparent}
+.nav-links a:hover, .nav-trigger:hover{color:var(--clay-deep)}
+.nav-links > li > a.active, .nav-trigger.active{border-bottom-color:var(--clay)}
+.drop{
+  position:absolute; top:100%; left:50%; transform:translateX(-50%) translateY(6px);
+  background:var(--paper); border:1px solid var(--line); border-radius:8px;
+  padding:8px; min-width:250px; display:grid; gap:2px; margin:0; list-style:none;
+  opacity:0; visibility:hidden; transition:opacity .18s ease, transform .18s ease, visibility .18s;
+  box-shadow:0 16px 40px rgba(62,46,34,.12);
+}
+.nav-links li:hover .drop, .nav-links li:focus-within .drop{opacity:1; visibility:visible; transform:translateX(-50%) translateY(0)}
+.drop a{display:block; padding:10px 12px; border-radius:5px; font-weight:450}
+.drop a:hover{background:var(--sand)}
+.lang{display:flex; align-items:center; gap:4px; font-size:.86rem}
+.lang button{background:none; border:0; cursor:pointer; color:var(--ink-3); font:inherit; font-weight:600; padding:6px 4px}
+.lang button.on{color:var(--ink); box-shadow:inset 0 -1.5px 0 var(--clay)}
+.lang span{color:var(--ink-3)}
+.nav .btn{padding:.7em 1.25em; font-size:.88rem}
+.nav .btn-nav{display:none}
+.burger{width:44px; height:44px; border:0; background:none; cursor:pointer; display:grid; place-content:center; gap:6px; padding:0; color:inherit}
+.burger span{display:block; width:22px; height:1.5px; background:currentColor}
+@media(min-width:1120px){ .nav-links{display:flex} .nav .btn-nav{display:inline-flex} .burger{display:none} }
+
+/* la ligne d'allure : elle avance avec la lecture, la pastille du logo en tête */
+.pace{position:absolute; left:0; bottom:-2px; height:2px; width:100%; pointer-events:none; opacity:0; transition:opacity .3s ease}
+.pace.show{opacity:1}
+.pace i{position:absolute; inset:0; background:var(--ink); transform-origin:0 50%; transform:scaleX(var(--p,0))}
+.pace b{position:absolute; top:50%; left:calc(var(--p,0) * 100%); width:9px; height:9px; margin:-4.5px 0 0 -4.5px; border-radius:50%; background:var(--clay)}
+
+.sheet{position:fixed; inset:0; z-index:90; background:var(--terre); color:var(--paper); padding:84px var(--gut) var(--gut); overflow-y:auto; display:none}
+.sheet.open{display:block}
+.sheet .close{position:absolute; top:14px; right:calc(var(--gut) - 8px); width:44px; height:44px; background:none; border:0; color:inherit; font-size:2rem; line-height:1; cursor:pointer}
+.sheet ul{list-style:none; margin:0; padding:0}
+.sheet > ul > li{border-bottom:1px solid var(--line-dark); padding:14px 0}
+.sheet a{display:block; text-decoration:none; font-family:var(--serif); font-size:clamp(1.8rem,7vw,2.4rem); line-height:1.15}
+.sheet .sub a{font-family:var(--sans); font-size:1rem; padding:7px 0; color:var(--cream-2)}
+.sheet .btn{display:inline-flex; margin-top:28px; font-family:var(--sans); font-size:.94rem; background:var(--paper); border-color:var(--paper); color:var(--terre)}
+
+/* ---------- vues ---------- */
+.view{display:none}
+.view.on{display:block; animation:fade .4s ease}
+@keyframes fade{from{opacity:0} to{opacity:1}}
+.page-head{padding-block:calc(var(--sect) + 70px) clamp(40px,7vh,84px); border-bottom:1px solid var(--line)}
+.page-head .lede{margin-top:1.6em}
+
+/* ---------- bannière ---------- */
+.hero{position:relative; min-height:100svh; display:flex; align-items:center; justify-content:center; text-align:center; overflow:hidden;
+  background:
+    radial-gradient(90% 60% at 50% 108%, rgba(194,91,52,.16), rgba(194,91,52,0) 70%),
+    linear-gradient(178deg, #FCF9F4 0%, #F6EEE1 60%, #EFE3D0 100%);
+}
+.hero-in{position:relative; width:100%; max-width:var(--maxw); padding:104px var(--gut) clamp(64px,10vh,110px)}
+.hero-logo{width:min(560px,74vw); height:auto; margin:0 auto clamp(30px,5vh,56px)}
+.hero-claim{font-family:var(--serif); letter-spacing:-.015em; line-height:1.05; font-size:clamp(2.1rem,4.6vw,3.9rem); margin:0 auto; max-width:20ch}
+.hero-sub{margin:clamp(20px,3vh,30px) auto clamp(28px,4.5vh,44px); max-width:36ch; color:var(--ink-2); font-size:clamp(1.05rem,1.3vw,1.22rem); line-height:1.5}
+.hero-cta{display:flex; gap:12px; justify-content:center; flex-wrap:wrap}
+/* le trait du logo, prolongé sur toute la largeur : il se trace une fois, à l'ouverture */
+.hero-line{position:absolute; left:0; right:var(--gut); bottom:0; height:2px}
+.hero-line i{position:absolute; inset:0; background:var(--ink); transform-origin:0 50%; animation:trace 1.7s cubic-bezier(.6,0,.2,1) .5s both}
+.hero-line b{position:absolute; right:-6px; top:50%; width:12px; height:12px; margin-top:-6px; border-radius:50%; background:var(--clay); animation:dot .5s cubic-bezier(.3,1.6,.5,1) 2.1s both}
+@keyframes trace{from{transform:scaleX(0)} to{transform:scaleX(1)}}
+@keyframes dot{from{transform:scale(0)} to{transform:scale(1)}}
+.hero-logo,.hero-claim,.hero-sub,.hero-cta{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.hero-claim{animation-delay:.15s} .hero-sub{animation-delay:.3s} .hero-cta{animation-delay:.45s}
+@keyframes rise{from{opacity:0; transform:translateY(14px)} to{opacity:1; transform:none}}
+
+/* ---------- accueil ---------- */
+.wide-photo img{width:100%; height:clamp(300px,62vh,720px); object-fit:cover; object-position:50% 36%}
+.offers{display:grid; grid-template-columns:1fr; border-top:1px solid var(--line)}
+.offer{display:flex; flex-direction:column; text-decoration:none; padding:clamp(28px,3.4vw,52px) 0; border-bottom:1px solid var(--line)}
+@media(min-width:820px){
+  .offers{grid-template-columns:1fr 1fr}
+  .offer{padding-inline:clamp(28px,3.4vw,56px)}
+  .offer:first-child{padding-left:0; border-right:1px solid var(--line)}
+  .offer:last-child{padding-right:0}
+}
+.offer .tag{font-family:var(--serif); font-style:italic; font-size:clamp(1.2rem,1.7vw,1.5rem); line-height:1.25; color:var(--clay-deep); margin:.9em 0 0; max-width:26ch}
+.offer ul{margin:1.6em 0 2.2em; padding:0; list-style:none; columns:2; column-gap:2em}
+@media(max-width:520px){ .offer ul{columns:1} }
+.offer li{padding:.32em 0 .32em 1.1em; position:relative; font-size:.96rem; color:var(--ink-2); break-inside:avoid}
+.offer li::before{content:""; position:absolute; left:0; top:.95em; width:5px; height:5px; border-radius:50%; background:var(--clay)}
+.offer .link{align-self:flex-start; margin-top:auto}
+.offer:hover .d3{color:var(--clay-deep)}
+.offer .d3{transition:color .2s ease}
+
+/* ---------- listes ---------- */
+.stack{list-style:none; margin:0; padding:0; border-top:1px solid var(--line)}
+.stack li{padding:.9em 0; border-bottom:1px solid var(--line); display:flex; gap:1.1em; align-items:baseline}
+.on-dark .stack, .on-dark .stack li{border-color:var(--line-dark)}
+.stack .k{font-family:var(--serif); font-size:1.15rem; color:var(--clay-deep); min-width:1.6em}
+.on-dark .stack .k{color:var(--clay-soft)}
+
+.why{display:grid; grid-template-columns:1fr; gap:clamp(26px,3vw,44px) clamp(24px,3vw,48px); margin:clamp(44px,7vh,84px) 0 0; padding:0; list-style:none}
+@media(min-width:640px){ .why{grid-template-columns:1fr 1fr} }
+@media(min-width:1100px){ .why{grid-template-columns:repeat(4,1fr)} }
+.why li{border-top:1px solid var(--line); padding-top:1.1em}
+.why h3{font-family:var(--serif); font-size:1.5rem; margin:0 0 .45em; line-height:1.15}
+.why p{font-size:.96rem; color:var(--ink-2); margin:0}
+
+.band{display:grid; grid-template-columns:1fr 1fr; gap:clamp(8px,1.2vw,16px)}
+.band img{width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:6px}
+
+.soon{background:var(--sand); border-radius:10px; padding:clamp(36px,6vw,80px) clamp(22px,4vw,60px)}
+
+/* ---------- formulaire ---------- */
+.form{display:grid; gap:20px; max-width:580px}
+.f2{display:grid; gap:20px; grid-template-columns:1fr}
+@media(min-width:620px){ .f2{grid-template-columns:1fr 1fr} }
+.field label{display:block; font-size:.88rem; font-weight:500; color:var(--ink-2); margin-bottom:.45em}
+.field input, .field select, .field textarea{
+  width:100%; background:#fff; border:1px solid var(--line); border-radius:6px;
+  padding:.8em .9em; font:inherit; color:inherit;
+}
+.field textarea{min-height:140px; resize:vertical}
+.field input:focus, .field select:focus, .field textarea:focus{outline:2px solid var(--clay); outline-offset:1px; border-color:var(--clay)}
+.form-status{font-size:.95rem; margin:0; min-height:1.5em; color:var(--ink-2)}
+.form-status.ok{color:#2F6030}
+.form-status.err{color:#9C2F14}
+.form button[disabled]{opacity:.55; cursor:wait}
+.mail-big{font-family:var(--serif); font-size:clamp(1.7rem,3vw,2.6rem); line-height:1.1; text-decoration:none; border-bottom:1.5px solid var(--clay)}
+.mail-big:hover{color:var(--clay-deep)}
+
+/* ---------- pied de page ---------- */
+.ftr{background:var(--terre); color:var(--paper); padding:clamp(56px,8vh,96px) var(--gut) 28px}
+.ftr-in{max-width:var(--maxw); margin-inline:auto}
+.ftr-top{display:grid; gap:clamp(32px,4vw,60px); grid-template-columns:1fr}
+@media(min-width:820px){ .ftr-top{grid-template-columns:1.5fr 1fr 1fr} }
+.ftr img.lg{height:clamp(64px,7vw,88px); width:auto; margin-bottom:1.4em}
+.ftr h2{font-size:.88rem; font-weight:500; color:var(--clay-soft); margin:0 0 1em}
+.ftr ul{list-style:none; margin:0; padding:0; display:grid; gap:.6em}
+.ftr a{text-decoration:none; color:var(--cream-2)}
+.ftr a:hover{color:var(--paper); text-decoration:underline; text-underline-offset:4px}
+.ftr p{color:var(--cream-2); margin:0}
+.ftr-bottom{display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; margin-top:clamp(40px,6vh,68px); padding-top:20px; border-top:1px solid var(--line-dark); font-size:.86rem; color:var(--cream-2)}
+
+/* ---------- prise de rendez-vous ---------- */
+.booking{position:fixed; inset:0; z-index:100; display:none; padding:clamp(12px,3vw,40px); place-items:center; background:rgba(36,28,22,.86)}
+.booking.open{display:grid}
+.booking-panel{position:relative; width:min(940px,100%); height:min(760px,92vh); background:var(--paper); border-radius:10px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 30px 80px rgba(36,28,22,.35)}
+.booking-head{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px clamp(16px,3vw,26px); border-bottom:1px solid var(--line); font-weight:600}
+.booking-close{background:none; border:0; font-size:1.8rem; line-height:1; cursor:pointer; color:var(--ink); width:44px; height:44px}
+.booking iframe{border:0; width:100%; flex:1; background:var(--paper)}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important; transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#top" data-en="Skip to content">Aller au contenu</a>
+
+<!-- ================= NAVIGATION ================= -->
+<header class="nav" id="nav">
+  <a class="nav-logo" href="#/accueil" aria-label="GOOD PACE, accueil">
+    <img src="assets/img/logo-ink.png" width="1107" height="399" alt="GOOD PACE">
+  </a>
+
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li>
+        <button class="nav-trigger" data-nav="accompagnement" data-en="Services">Accompagnement</button>
+        <ul class="drop">
+          <li><a href="#/accompagnement/community-management">Community Management</a></li>
+          <li><a href="#/accompagnement/brand-partnerships">Brand Partnerships</a></li>
+        </ul>
+      </li>
+      <li>
+        <button class="nav-trigger" data-nav="communaute" data-en="Community">Communauté</button>
+        <ul class="drop">
+          <li><a href="#/communaute">Join the Good Pacers</a></li>
+          <li><a href="#/communaute/camp">The Good Pace Camp</a></li>
+        </ul>
+      </li>
+      <li>
+        <button class="nav-trigger" data-nav="histoire" data-en="My story">Mon histoire</button>
+        <ul class="drop">
+          <li><a href="#/histoire/qui-suis-je" data-en="Who am I?">Qui suis-je ?</a></li>
+          <li><a href="#/histoire/origine" data-en="How GOOD PACE started">Comment GOOD PACE a été créé ?</a></li>
+        </ul>
+      </li>
+      <li><a href="#/partenaires" data-nav="partenaires" data-en="Partners">Partenaires</a></li>
+      <li><a href="#/contact" data-nav="contact">Contact</a></li>
+    </ul>
+
+    <div class="lang" role="group" aria-label="Langue / Language">
+      <button id="btn-fr" class="on" aria-pressed="true" aria-label="Français">FR</button><span aria-hidden="true">/</span><button id="btn-en" aria-pressed="false" aria-label="English">EN</button>
+    </div>
+
+    <a class="btn btn-nav" href="#/contact">Join Good Pace</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="sheet"><span></span><span></span><span></span></button>
+  </div>
+
+  <div class="pace" id="pace" aria-hidden="true"><i></i><b></b></div>
+</header>
+
+<!-- ================= MENU MOBILE ================= -->
+<nav class="sheet" id="sheet" aria-label="Menu">
+  <button class="close" id="sheet-close" aria-label="Fermer">&times;</button>
+  <ul>
+    <li><a href="#/accueil" data-en="Home">Accueil</a></li>
+    <li>
+      <a href="#/accompagnement" data-en="Services">Accompagnement</a>
+      <ul class="sub">
+        <li><a href="#/accompagnement/community-management">Community Management</a></li>
+        <li><a href="#/accompagnement/brand-partnerships">Brand Partnerships</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#/communaute" data-en="Community">Communauté</a>
+      <ul class="sub">
+        <li><a href="#/communaute">Join the Good Pacers</a></li>
+        <li><a href="#/communaute/camp">The Good Pace Camp</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#/histoire" data-en="My story">Mon histoire</a>
+      <ul class="sub">
+        <li><a href="#/histoire/qui-suis-je" data-en="Who am I?">Qui suis-je ?</a></li>
+        <li><a href="#/histoire/origine" data-en="How GOOD PACE started">Comment GOOD PACE a été créé ?</a></li>
+      </ul>
+    </li>
+    <li><a href="#/partenaires" data-en="Partners">Partenaires</a></li>
+    <li><a href="#/contact">Contact</a></li>
+  </ul>
+  <a class="btn" href="#/contact">Join Good Pace</a>
+</nav>
+
+<main id="top">
+
+<!-- ================================================================
+     VUE 1 — ACCUEIL
+     ================================================================ -->
+<div class="view on" id="v-accueil">
+
+  <section class="hero">
+    <div class="hero-in">
+      <img class="hero-logo" src="assets/img/logo-ink.png" width="1107" height="399" alt="GOOD PACE — Athlete Management">
+      <h1 class="hero-claim" data-en="Your pace.<br>Your story.<br>Your <span class='it hl'>community.</span>">Ton rythme.<br>Ton histoire.<br>Ta <span class="it hl">communauté.</span></h1>
+      <p class="hero-sub" data-en="We walk beside athletes, far beyond the finish line.">Nous accompagnons les athlètes bien au-delà de la ligne d'arrivée.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#/contact">Join Good Pace</a>
+        <a class="btn btn-line" href="#intro" data-en="Discover Good Pace">Découvrir Good Pace</a>
+      </div>
+    </div>
+    <div class="hero-line" aria-hidden="true"><i></i><b></b></div>
+  </section>
+
+  <!-- INTRODUCTION -->
+  <section class="sect wrap" id="intro">
+    <div class="cols c2 c-top">
+      <h2 class="d2" data-en="GOOD PACE means supporting athletes beyond their performance.">GOOD PACE, c'est accompagner les athlètes au-delà de leur performance.</h2>
+      <div>
+        <p class="lede" style="max-width:44ch" data-en="Behind every result there is a person. A way of training, of failing, of starting again. A story to tell, a community to build, and brands to move forward with.">Derrière chaque résultat, il y a une personne. Une façon de s'entraîner, d'échouer, de recommencer. Une histoire à raconter, une communauté à construire et des marques avec qui avancer.</p>
+        <p class="quote" style="margin-top:1.3em" data-en="Get the performance noticed.<br><span class='it hl'>Get the athlete recognised.</span>">Faire connaître la performance.<br><span class="it hl">Faire reconnaître l'athlète.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <figure class="wide-photo">
+    <img src="assets/img/groupe.jpg" width="1600" height="1260" loading="lazy" decoding="async" alt="Groupe de traileuses en montée dans un alpage">
+  </figure>
+
+  <!-- ACCOMPAGNEMENT — aperçu -->
+  <section class="sect on-sand">
+    <div class="wrap">
+      <span class="kicker" data-en="Services">Accompagnement</span>
+      <h2 class="d2 it" style="margin-bottom:clamp(30px,5vh,56px)">Two ways to move forward.</h2>
+      <div class="offers">
+        <a class="offer" href="#/accompagnement/community-management">
+          <h3 class="d3">Community Management</h3>
+          <p class="tag" data-en="You live your sport. We tell your story.">Tu vis ton sport. On raconte ton histoire.</p>
+          <ul>
+            <li data-en="Social media strategy">Stratégie social media</li>
+            <li data-en="Content creation">Création de contenu</li>
+            <li data-en="Storytelling">Storytelling</li>
+            <li data-en="Day-to-day channel management">Gestion quotidienne des réseaux</li>
+            <li data-en="Community growth">Développement de communauté</li>
+            <li data-en="Editorial planning">Stratégie éditoriale</li>
+          </ul>
+          <span class="link" data-en="Discover Community Management">Découvrir Community Management</span>
+        </a>
+        <a class="offer" href="#/accompagnement/brand-partnerships">
+          <h3 class="d3">Brand Partnerships</h3>
+          <p class="tag" data-en="Two worlds that match, and grow together.">Deux univers qui matchent et qui grandissent ensemble.</p>
+          <ul>
+            <li data-en="Partnership strategy">Stratégie de partenariat</li>
+            <li data-en="Finding the right brands">Identification de marques pertinentes</li>
+            <li data-en="Introductions">Mise en relation</li>
+            <li data-en="Building the offer">Construction d'offres</li>
+            <li data-en="Activating collaborations">Activation des collaborations</li>
+            <li data-en="Managing the athlete / brand relationship">Suivi de la relation athlète / marque</li>
+          </ul>
+          <span class="link" data-en="Discover Brand Partnerships">Découvrir Brand Partnerships</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOOD PACERS — aperçu -->
+  <section class="sect on-dark">
+    <div class="wrap cols c-side-r c-mid">
+      <div>
+        <span class="kicker" data-en="The community">La communauté</span>
+        <h2 class="d2">Join the <span class="it">Good Pacers.</span></h2>
+        <p class="quote" style="margin:1em 0 .9em" data-en="Different sports.<br>Different paces.<br><span class='it hl'>The same playground.</span>">Chacun son sport.<br>Chacun son rythme.<br><span class="it hl">Le même terrain de jeu.</span></p>
+        <p class="muted" data-en="The Good Pacers are the athletes GOOD PACE works with, and everyone who gravitates around them. We share the training, the races, the injuries, the weeks with no energy. Everything you do not see on race day.">Les Good Pacers, ce sont les athlètes accompagnés par GOOD PACE et tous ceux qui gravitent autour. On y partage les entraînements, les courses, les blessures, les semaines sans envie. Tout ce qu'on ne voit pas le jour du départ.</p>
+        <p style="margin-top:2em"><a class="btn" href="#/communaute" data-en="Become a Good Pacer">Devenir Good Pacer</a></p>
+      </div>
+      <figure><img class="photo r45" src="assets/img/montagne.jpg" width="880" height="1100" loading="lazy" decoding="async" alt="Groupe de traileurs sur une crête, vallée en contrebas"></figure>
+    </div>
+  </section>
+
+  <!-- MON HISTOIRE — aperçu -->
+  <section class="sect wrap">
+    <div class="cols c-side c-mid">
+      <figure><img class="photo r45" src="assets/img/portrait.jpg" width="1100" height="1375" loading="lazy" decoding="async" alt="Anaïs, fondatrice de GOOD PACE"></figure>
+      <div>
+        <span class="kicker" data-en="My story">Mon histoire</span>
+        <h2 class="d2" data-en="Hi, I'm Anaïs.">Bonjour, moi c'est Anaïs.</h2>
+        <p style="margin-top:1.6em" data-en="Connecting people is my engine: communication, partnerships, events. And trail running, which has been in the family since I was a kid, waiting for my dad at the finish line. GOOD PACE was born right between the two.">Créer du lien avec les gens, c'est mon moteur : la communication, les partenariats, l'événementiel. Et le trail, qui est dans la famille depuis que je suis petite, à attendre mon papa à la ligne d'arrivée. GOOD PACE est né exactement entre les deux.</p>
+        <p style="margin-top:1.8em"><a class="link" href="#/histoire" data-en="Read the story">Lire l'histoire</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT — bande finale -->
+  <section class="sect on-sand center">
+    <div class="wrap center">
+      <h2 class="d1 it">Let's move.</h2>
+      <p class="lede muted" style="margin-block:1.2em 2em" data-en="For athletes, for brands, or simply to understand how we work.">Pour les athlètes, pour les marques, ou simplement pour comprendre comment nous travaillons.</p>
+      <a class="btn" href="#/contact">Join Good Pace</a>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     VUE 2 — ACCOMPAGNEMENT
+     ================================================================ -->
+<div class="view" id="v-accompagnement">
+  <header class="page-head wrap">
+    <span class="kicker" data-en="Services">Accompagnement</span>
+    <h1 class="d1 it">Two ways to<br>move forward.</h1>
+    <p class="lede muted" data-en="Two complementary ways in. Most athletes start with one and open the second when their audience is ready.">Deux portes d'entrée complémentaires. La plupart des athlètes commencent par l'une et ouvrent la seconde quand leur audience est prête.</p>
+  </header>
+
+  <section class="sect wrap" id="community-management">
+    <div class="cols c-side-r c-top">
+      <div>
+        <h2 class="d2">Community Management</h2>
+        <p class="quote" style="margin:.7em 0 1.3em" data-en="You live your sport.<br><span class='it hl'>We tell your story.</span>">Tu vis ton sport.<br><span class="it hl">On raconte ton histoire.</span></p>
+        <p data-en="Training, travel, doubts, small victories: the material is already there. What is usually missing is a direction, a rhythm, and someone to handle it while you focus on the sport.">L'entraînement, les déplacements, les doutes, les petites victoires : la matière existe déjà. Ce qui manque, c'est une direction, un rythme, et quelqu'un pour s'en occuper pendant que tu te concentres sur le sport.</p>
+        <ul class="stack" style="margin:2.2em 0">
+          <li data-en="Editorial strategy and communication identity">Stratégie éditoriale et identité de communication</li>
+          <li data-en="Content creation: photo, video, writing">Création de contenu : photo, vidéo, écriture</li>
+          <li data-en="Day-to-day management of your channels">Gestion quotidienne de tes réseaux</li>
+          <li data-en="Storytelling around races and seasons">Storytelling autour des courses et des saisons</li>
+          <li data-en="Community growth and engagement">Développement et animation de la communauté</li>
+          <li data-en="Bringing out who you actually are">Mise en valeur de ta personnalité</li>
+        </ul>
+        <a class="btn" href="#/contact" data-en="Talk about it">En parler</a>
+      </div>
+      <figure><img class="photo r45" src="assets/img/montagne.jpg" width="880" height="1100" loading="lazy" decoding="async" alt="Groupe de traileurs sur une crête, vallée en contrebas"></figure>
+    </div>
+  </section>
+
+  <section class="sect on-dark" id="brand-partnerships">
+    <div class="wrap cols c-side c-top">
+      <div>
+        <h2 class="d2">Brand Partnerships</h2>
+        <p class="quote" style="margin-top:.7em; max-width:20ch" data-en="A good partnership is not a logo on a jersey.<br><span class='it hl'>It is two worlds that match, and grow together.</span>">Un bon partenariat, ce n'est pas un logo sur un maillot.<br><span class="it hl">C'est deux univers qui matchent et qui grandissent ensemble.</span></p>
+      </div>
+      <div>
+        <p class="lede" style="max-width:44ch" data-en="We find the brands that share your world, your values and your way of moving forward.">Nous trouvons les marques qui partagent ton univers, tes valeurs et ta façon d'avancer.</p>
+        <!-- numérotée, parce que c'est un déroulé : de la stratégie au suivi -->
+        <ol class="stack" style="margin:2.2em 0">
+          <li><span class="k">1</span><span data-en="Partnership strategy">Stratégie de partenariat</span></li>
+          <li><span class="k">2</span><span data-en="Identifying relevant brands">Identification de marques pertinentes</span></li>
+          <li><span class="k">3</span><span data-en="Introductions and first conversations">Mise en relation et premiers échanges</span></li>
+          <li><span class="k">4</span><span data-en="Building the offer and the media kit">Construction de l'offre et du media kit</span></li>
+          <li><span class="k">5</span><span data-en="Activating the collaboration">Activation de la collaboration</span></li>
+          <li><span class="k">6</span><span data-en="Following the relationship over time">Suivi de la relation dans la durée</span></li>
+        </ol>
+        <a class="btn" href="#/contact" data-en="Talk about it">En parler</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sect wrap center">
+    <h2 class="d2 it">Not sure where to start?</h2>
+    <p class="muted" style="margin-block:1.2em 2em; max-width:44ch" data-en="A free call is usually the fastest way to find out.">Un appel gratuit est en général le moyen le plus rapide de le savoir.</p>
+    <!-- data-book : ouvre l'agenda si BOOKING_URL est renseigné (voir le script), sinon mène à la page Contact -->
+    <a class="btn" href="#/contact" data-book data-en="Book a free call">Réserver un appel gratuit</a>
+  </section>
+</div>
+
+<!-- ================================================================
+     VUE 3 — COMMUNAUTÉ
+     ================================================================ -->
+<div class="view" id="v-communaute">
+  <header class="page-head wrap">
+    <span class="kicker" data-en="Community">Communauté</span>
+    <h1 class="d1">Join the<br><span class="it">Good Pacers.</span></h1>
+    <p class="quote" style="margin-top:1.2em" data-en="Different sports.<br>Different paces.<br><span class='it hl'>The same playground.</span>">Chacun son sport.<br>Chacun son rythme.<br><span class="it hl">Le même terrain de jeu.</span></p>
+  </header>
+
+  <section class="sect wrap">
+    <div class="cols c2 c-top">
+      <h2 class="d2" data-en="A network is a list of names. A community is people who actually call each other.">Un réseau, c'est une liste de noms. Une communauté, ce sont des gens qui s'appellent vraiment.</h2>
+      <div>
+        <p data-en="The group stays small, because we actually want to know each other. Everyone moves at their own pace, in their own sport, with their own goals. Nobody compares, everybody is interested.">Le groupe reste petit, parce qu'on veut se connaître pour de vrai. Chacun avance à son rythme, dans son sport, avec ses objectifs. Personne ne compare, tout le monde s'intéresse.</p>
+        <p data-en="We talk about sport, and about everything around it. The weeks where it all clicks, and the ones where you need to slow down, breathe and reset. Nobody here needs that explained.">On y parle de sport, et de tout ce qui gravite autour. Des semaines où tout s'enchaîne, et de celles où il faut ralentir, respirer, tout remettre à plat. Personne ici n'a besoin qu'on le lui explique.</p>
+      </div>
+    </div>
+
+    <ul class="why">
+      <li><h3 data-en="We understand each other">On se comprend</h3><p data-en="Different disciplines, different levels, and a very precise idea of what the other one is going through.">Des disciplines et des niveaux différents, et une idée très précise de ce que l'autre traverse.</p></li>
+      <li><h3 data-en="We tell each other everything">On se raconte tout</h3><p data-en="Races, training, injuries, sponsors, doubts: what is written down nowhere.">Courses, entraînement, blessures, sponsors, doutes : ce qui n'est écrit nulle part.</p></li>
+      <li><h3 data-en="We meet up">On se retrouve</h3><p data-en="Sessions, weekends, and one camp a year, between Good Pacers only.">Des sorties, des week-ends, et un camp par année, entre Good Pacers uniquement.</p></li>
+      <li><h3 data-en="We push each other">On se pousse</h3><p data-en="Nobody asks you to be the best. Everybody helps you get better.">Personne ne te demande d'être le meilleur. Tout le monde t'aide à être meilleur.</p></li>
+      <li><h3 data-en="We slow down too">On ralentit aussi</h3><p data-en="Flat weeks, rough patches, resets. That is part of the job.">Les semaines creuses, les coups de moins bien, les reset. Ça fait partie du métier.</p></li>
+      <li><h3 data-en="We stay ourselves">On reste soi</h3><p data-en="No character to hold, no posture to defend. It is restful.">Pas de personnage à tenir, pas de posture à défendre. C'est reposant.</p></li>
+      <li><h3 data-en="We create together">On crée ensemble</h3><p data-en="Photos, videos, series, shared projects: what comes out of group outings is yours too.">Photos, vidéos, séries, projets communs : ce qui sort des sorties de groupe t'appartient aussi.</p></li>
+      <li><h3 data-en="We open doors">On ouvre des portes</h3><p data-en="The brands and projects that come through GOOD PACE come through the group first.">Les marques et les projets qui passent par GOOD PACE passent d'abord par le groupe.</p></li>
+    </ul>
+  </section>
+
+  <!-- LE CAMP -->
+  <section class="sect on-dark" id="camp">
+    <div class="wrap">
+      <div class="cols c-side c-top" style="margin-bottom:clamp(32px,5vh,56px)">
+        <div>
+          <span class="kicker">The Good Pace Camp</span>
+          <h2 class="d2" data-en="One camp.<br>Once a year.">Un camp.<br>Une fois par année.</h2>
+        </div>
+        <div>
+          <p class="lede" style="max-width:44ch" data-en="Not a competition. A few days together on ground nobody knows yet: training, exploring, cooking, filming, talking late.">Pas une compétition. Quelques jours ensemble, sur un terrain que personne ne connaît encore : s'entraîner, explorer, cuisiner, filmer, discuter jusqu'à tard.</p>
+          <p class="muted" style="margin-top:1.2em" data-en="It is the one moment in the year when everyone is in the same place. Faces on names, new trails, long meals, and the only thing that really brings this group together: the sport.">C'est le seul moment de l'année où tout le monde est au même endroit. Des visages sur les noms, des sentiers qu'on ne connaissait pas, des repas qui durent, et la seule chose qui rassemble vraiment ce groupe : le sport.</p>
+        </div>
+      </div>
+      <!-- Remplacer par une image ou une vidéo immersive du camp -->
+      <figure><img class="photo r169" src="assets/img/groupe.jpg" width="1600" height="1260" loading="lazy" decoding="async" alt="Groupe de traileuses en montée dans un alpage" style="object-position:50% 40%"></figure>
+    </div>
+  </section>
+
+  <section class="sect wrap center">
+    <h2 class="d2 it">Become a Good Pacer.</h2>
+    <p class="muted" style="margin-block:1.2em 2em; max-width:46ch" data-en="Write to us. Who you are, what you do, and why this speaks to you. We answer everyone.">Écris-nous. Qui tu es, ce que tu fais, et pourquoi ça te parle. On répond à tout le monde.</p>
+    <a class="btn" href="#/contact" data-en="Become a Good Pacer">Devenir Good Pacer</a>
+  </section>
+</div>
+
+<!-- ================================================================
+     VUE 4 — MON HISTOIRE
+     ================================================================ -->
+<div class="view" id="v-histoire">
+  <header class="page-head wrap">
+    <span class="kicker" data-en="My story">Mon histoire</span>
+    <h1 class="d1" data-en="Behind<br><span class='it'>Good Pace.</span>">Derrière<br><span class="it">Good Pace.</span></h1>
+  </header>
+
+  <section class="sect wrap" id="qui-suis-je">
+    <div class="cols c-side c-top">
+      <figure style="position:sticky; top:96px"><img class="photo r45" src="assets/img/portrait.jpg" width="1100" height="1375" loading="lazy" decoding="async" alt="Anaïs, fondatrice de GOOD PACE"></figure>
+      <div>
+        <span class="kicker" data-en="Who am I?">Qui suis-je ?</span>
+        <h2 class="d2" data-en="Hi, I'm Anaïs.">Bonjour, moi c'est Anaïs.</h2>
+        <p class="lede" style="margin-top:1.4em; max-width:44ch" data-en="Connecting people is what I do. It is probably my main engine.">Créer du lien avec les gens, ça me connaît. C'est même mon moteur principal.</p>
+        <p style="margin-top:1.2em" data-en="Communication, partnerships, events: I have always liked making people meet and helping stories grow. I spent several years running sponsorship for a watch brand, watching how a brand picks an athlete and what it really expects from a collaboration.">La communication, les partenariats, l'événementiel : j'ai toujours aimé provoquer des rencontres et faire grandir des histoires. J'ai passé plusieurs années à gérer le sponsoring d'une marque horlogère, à voir comment une marque choisit un athlète et ce qu'elle attend vraiment d'une collaboration.</p>
+        <p data-en="But behind GOOD PACE there is something far more personal.">Mais derrière GOOD PACE, il y a quelque chose de beaucoup plus personnel.</p>
+        <p data-en="Trail and running are part of my family history. I fell into it as a kid. I used to go and watch my dad at Sierre-Zinal, and wait for him at the finish line.">Le trail et la course à pied font partie de mon histoire familiale. Je suis tombée dedans quand j'étais petite. J'allais voir mon papa à Sierre-Zinal, et je l'attendais à la ligne d'arrivée.</p>
+        <p data-en="I wanted to feel that thing myself. The one you can read on a runner's face as they come through the arch.">Je voulais ressentir à mon tour cette vibration-là. Celle qu'on lit sur le visage des coureurs quand ils passent l'arche.</p>
+        <p data-en="That is how I started running. I never really stopped.">C'est comme ça que j'ai commencé à courir. Je n'ai jamais vraiment arrêté.</p>
+        <p data-en="Challenges are familiar ground. Always with a smile, and that same urge to cross the line.">Les challenges, ça me connaît. Toujours avec le sourire, et cette envie de franchir la ligne.</p>
+        <p class="quote" style="margin-top:1.3em" data-en="GOOD PACE was born right there.<br><span class='it hl'>Between the two.</span>">GOOD PACE est né exactement là.<br><span class="it hl">Entre les deux.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="band">
+    <img src="assets/img/utmb.jpg" width="820" height="1025" loading="lazy" decoding="async" alt="Arrivée sous l'arche de l'UTMB à Chamonix">
+    <img src="assets/img/toast.jpg" width="820" height="1025" loading="lazy" decoding="async" alt="Avocado toast et café glacé en terrasse">
+  </div></div>
+
+  <section class="sect" id="origine">
+    <div class="wrap cols c-side c-top">
+      <div>
+        <span class="kicker" data-en="How GOOD PACE started">Comment GOOD PACE a été créé ?</span>
+        <h2 class="d2 it">It started over an avocado toast.</h2>
+      </div>
+      <div>
+        <p data-en="No strategic plan, no business school pitch. A café, a Sunday morning, a long run behind us and an avocado toast in front of us.">Pas de plan stratégique, pas de pitch d'école de commerce. Un café, un dimanche matin, une longue sortie derrière nous et un avocado toast devant nous.</p>
+        <p data-en="Someone said she had no idea how to approach a brand. Someone else said she had stopped posting because she never knew what to say. Someone else had been asked for a media kit and had no idea what that meant.">Quelqu'un a dit qu'elle ne savait pas du tout comment aborder une marque. Une autre a dit qu'elle avait arrêté de publier parce qu'elle ne savait jamais quoi dire. Une troisième s'était fait demander un media kit sans savoir ce que c'était.</p>
+        <p data-en="The conversation lasted two hours. By the end, the idea had a name.">La conversation a duré deux heures. À la fin, l'idée avait un nom.</p>
+        <p class="quote" style="margin:1.4em 0; max-width:24ch" data-en="Performances, like good ideas, rarely start where you expect them to.">Les performances, comme les bonnes idées, commencent rarement là où on les attend.</p>
+        <p class="muted" data-en="GOOD PACE is still that: conversations that go somewhere, and the work that follows.">GOOD PACE, c'est toujours ça : des conversations qui mènent quelque part, et le travail qui suit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sect on-sand center">
+    <div class="wrap center">
+      <h2 class="d2 it" data-en="Want to be part of it?">Envie d'en faire partie ?</h2>
+      <a class="btn" style="margin-top:2em" href="#/contact">Join Good Pace</a>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     VUE 5 — PARTENAIRES
+     ================================================================ -->
+<div class="view" id="v-partenaires">
+  <header class="page-head wrap">
+    <span class="kicker" data-en="Partners">Partenaires</span>
+    <h1 class="d1 it">Good athletes.<br>Good stories.<br>Good partnerships.</h1>
+  </header>
+
+  <section class="sect wrap">
+    <div class="cols c2 c-top">
+      <div>
+        <span class="kicker" data-en="For brands">Pour les marques</span>
+        <h2 class="d2" data-en="The best collaborations do not start with a follower count.">Les meilleures collaborations ne commencent pas par un nombre d'abonnés.</h2>
+      </div>
+      <div>
+        <p class="lede" style="max-width:44ch" data-en="They start with a shared way of seeing things.">Elles commencent par une façon commune de voir les choses.</p>
+        <p style="margin-top:1.2em" data-en="We work with a small number of athletes, which means we know them well enough to tell you honestly whether your brand belongs in their world or not.">Nous travaillons avec un petit nombre d'athlètes, ce qui nous permet de les connaître assez bien pour vous dire honnêtement si votre marque a sa place dans leur univers ou non.</p>
+      </div>
+    </div>
+
+    <ul class="why">
+      <li><h3 data-en="Ambassadors">Ambassadeurs</h3><p data-en="Long-term relationships rather than one-off posts.">Des relations durables plutôt que des publications isolées.</p></li>
+      <li><h3 data-en="Campaigns">Campagnes</h3><p data-en="Concept, shooting, distribution, follow-up.">Concept, shooting, diffusion, suivi.</p></li>
+      <li><h3 data-en="Content">Contenu</h3><p data-en="Photo and video made on the ground, not in a studio.">Photo et vidéo produites sur le terrain, pas en studio.</p></li>
+      <li><h3 data-en="Events">Événements</h3><p data-en="Presence at races, camps and brand moments.">Présence sur les courses, les camps et vos rendez-vous de marque.</p></li>
+    </ul>
+  </section>
+
+  <section class="wrap" style="padding-bottom:var(--sect)">
+    <div class="soon center">
+      <span class="kicker" data-en="Coming soon">Bientôt</span>
+      <h2 class="d3 it">The first partnerships are being built.</h2>
+      <p class="muted" style="margin-block:1.2em 2em; max-width:50ch" data-en="This page will host logos, campaigns, athletes involved and the projects we have delivered. It is deliberately empty for now: we would rather show real work than fill the space.">Cette page accueillera les logos, les campagnes, les athlètes concernés et les projets réalisés. Elle est volontairement vide pour l'instant : nous préférons montrer du vrai travail plutôt que remplir l'espace.</p>
+      <a class="btn" href="#/contact" data-en="Become a GOOD PACE partner">Devenir partenaire GOOD PACE</a>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     VUE 6 — CONTACT
+     ================================================================ -->
+<div class="view" id="v-contact">
+  <header class="page-head wrap" style="border-bottom:0; padding-bottom:0">
+    <span class="kicker">Contact</span>
+    <h1 class="d1 it">Let's move.</h1>
+    <p class="lede muted" data-en="For athletes, for brands, or for anyone who wants to understand what GOOD PACE is about.">Pour les athlètes, les marques, ou toute personne souhaitant comprendre l'univers GOOD PACE.</p>
+  </header>
+
+  <section class="sect wrap" style="padding-top:clamp(44px,7vh,80px)">
+    <div class="cols c-side c-top">
+      <div>
+        <!-- Adresse à modifier ici, dans le pied de page et dans le script (messages du formulaire) -->
+        <span class="kicker" data-en="Write to us">Nous écrire</span>
+        <p><a class="mail-big" href="mailto:hello@goodpace.ch">hello@goodpace.ch</a></p>
+        <p class="muted" style="margin-top:2em; max-width:34ch" data-en="We answer everyone, usually within a few days.">On répond à tout le monde, en général en quelques jours.</p>
+        <p style="margin-top:1.6em"><a class="link" href="https://www.instagram.com/goodpace.ch/" target="_blank" rel="noopener">Instagram @goodpace.ch</a></p>
+        <p class="small muted" style="margin-top:1.6em" data-en="Based in Switzerland">Basée en Suisse</p>
+      </div>
+
+      <form class="form" id="contact-form" novalidate>
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute; left:-9999px; width:1px; height:1px; opacity:0">
+        <div class="f2">
+          <div class="field"><label for="f-first" data-en="First name">Prénom</label><input id="f-first" name="first" autocomplete="given-name" required></div>
+          <div class="field"><label for="f-last" data-en="Last name">Nom</label><input id="f-last" name="last" autocomplete="family-name" required></div>
+        </div>
+        <div class="field"><label for="f-mail">Email</label><input id="f-mail" name="mail" type="email" autocomplete="email" required></div>
+        <div class="field">
+          <label for="f-who" data-en="I am">Je suis</label>
+          <select id="f-who" name="who">
+            <option data-en="Athlete">Athlète</option>
+            <option data-en="Brand">Marque</option>
+            <option data-en="Other">Autre</option>
+          </select>
+        </div>
+        <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="msg" required></textarea></div>
+        <div><button class="btn" type="submit" data-en="Send message">Envoyer le message</button></div>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<!-- ===== Prise de rendez-vous — le lien Google se règle dans BOOKING_URL, en haut du script ===== -->
+<div class="booking" id="booking" role="dialog" aria-modal="true" aria-label="Réservation">
+  <div class="booking-panel">
+    <div class="booking-head">
+      <span data-en="Book a free call">Réserver un appel gratuit</span>
+      <button class="booking-close" id="booking-close" aria-label="Fermer">&times;</button>
+    </div>
+    <iframe id="booking-frame" title="Réservation GOOD PACE" loading="lazy"></iframe>
+  </div>
+</div>
+
+<!-- ================= PIED DE PAGE ================= -->
+<footer class="ftr">
+  <div class="ftr-in">
+    <div class="ftr-top">
+      <div>
+        <img class="lg" src="assets/img/logo-baseline-cream.png" width="700" height="279" loading="lazy" alt="GOOD PACE — Athlete Management">
+        <p data-en="We walk beside athletes, far beyond the finish line.">Nous accompagnons les athlètes bien au-delà de la ligne d'arrivée.</p>
+      </div>
+      <nav aria-label="Pages">
+        <h2 data-en="Site">Le site</h2>
+        <ul>
+          <li><a href="#/accompagnement" data-en="Services">Accompagnement</a></li>
+          <li><a href="#/communaute" data-en="Community">Communauté</a></li>
+          <li><a href="#/histoire" data-en="My story">Mon histoire</a></li>
+          <li><a href="#/partenaires" data-en="Partners">Partenaires</a></li>
+          <li><a href="#/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 data-en="Get in touch">Nous joindre</h2>
+        <ul>
+          <li><a href="mailto:hello@goodpace.ch">hello@goodpace.ch</a></li>
+          <li><a href="https://www.instagram.com/goodpace.ch/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="#/communaute" data-en="Join the Good Pacers">Rejoindre les Good Pacers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-bottom">
+      <span>&copy; <span id="year">2026</span> GOOD PACE</span>
+      <span data-en="Athlete management, Switzerland">Athlete management, Suisse</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* =====================================================================
+     PRISE DE RENDEZ-VOUS
+     Colle ici le lien de ta page Google Appointment Scheduling
+     (Google Agenda > Créer > Planning de rendez-vous > Partager > Copier le lien).
+     Tant que cette valeur reste vide, le bouton « Réserver un appel gratuit »
+     mène simplement à la page Contact : rien n'est cassé pour le visiteur.
+     ===================================================================== */
+  var BOOKING_URL = '';
+
+  /* =====================================================================
+     FORMULAIRE — FORMSPREE
+     Identifiant du formulaire Formspree (les 8 caractères après /f/).
+     Si cette valeur est vide, le formulaire ouvre l'application mail.
+     ===================================================================== */
+  var FORMSPREE_ID = 'xwlvykyy';
+
+  /* Titre de l'onglet, page par page : [français, anglais] */
+  var TITLES = {
+    accueil:        ['GOOD PACE — Athlete Management', 'GOOD PACE — Athlete Management'],
+    accompagnement: ['Accompagnement — GOOD PACE', 'Services — GOOD PACE'],
+    communaute:     ['Communauté, les Good Pacers — GOOD PACE', 'Community, the Good Pacers — GOOD PACE'],
+    histoire:       ['Mon histoire — GOOD PACE', 'My story — GOOD PACE'],
+    partenaires:    ['Partenaires — GOOD PACE', 'Partners — GOOD PACE'],
+    contact:        ['Contact — GOOD PACE', 'Contact — GOOD PACE']
+  };
+
+  function store(k, v){ try{ if(v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); }catch(e){ return null; } }
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ---------- bilingue : le FR est dans le HTML, l'EN dans data-en ---------- */
+  var i18n = document.querySelectorAll('[data-en]');
+  i18n.forEach(function(el){ el.dataset.fr = el.innerHTML; });
+  var lang = 'fr', current = 'accueil';
+
+  function setTitle(){ var t = TITLES[current] || TITLES.accueil; document.title = t[lang === 'en' ? 1 : 0]; }
+
+  function setLang(l, remember){
+    lang = l;
+    document.documentElement.lang = l;
+    i18n.forEach(function(el){ el.innerHTML = (l === 'en' ? el.dataset.en : el.dataset.fr); });
+    var fr = document.getElementById('btn-fr'), en = document.getElementById('btn-en');
+    fr.classList.toggle('on', l === 'fr'); en.classList.toggle('on', l === 'en');
+    fr.setAttribute('aria-pressed', l === 'fr'); en.setAttribute('aria-pressed', l === 'en');
+    setTitle();
+    if(remember) store('gp-lang', l);
+  }
+  document.getElementById('btn-fr').addEventListener('click', function(){ setLang('fr', true); });
+  document.getElementById('btn-en').addEventListener('click', function(){ setLang('en', true); });
+
+  /* première visite : anglais si le navigateur n'est pas en français ; ensuite on retient le choix du visiteur */
+  var saved = store('gp-lang');
+  if(saved === 'en' || (!saved && !/^fr/i.test(navigator.language || 'fr'))) setLang('en', false);
+
+  /* ---------- navigation par vues ---------- */
+  var views = document.querySelectorAll('.view');
+  var nav = document.getElementById('nav'), pace = document.getElementById('pace');
+
+  function show(name, anchor){
+    var target = document.getElementById('v-' + name);
+    if(!target){ target = document.getElementById('v-accueil'); name = 'accueil'; }
+    current = name;
+    views.forEach(function(v){ v.classList.toggle('on', v === target); });
+    document.querySelectorAll('[data-nav]').forEach(function(a){
+      var on = a.dataset.nav === name;
+      a.classList.toggle('active', on);
+      if(a.tagName === 'A'){ if(on) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); }
+    });
+    setTitle();
+    var el = anchor && document.getElementById(anchor);
+    if(el){ requestAnimationFrame(function(){ el.scrollIntoView({behavior:'instant', block:'start'}); onScroll(); }); return; }
+    window.scrollTo(0,0);
+    onScroll();
+  }
+
+  function route(){
+    var parts = location.hash.replace(/^#\/?/, '').split('/');
+    show(parts[0] || 'accueil', parts[1]);
+  }
+  window.addEventListener('hashchange', route);
+
+  /* ancres internes à la page d'accueil (ex. #intro) */
+  document.querySelectorAll('a[href^="#"]:not([href^="#/"])').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var el = document.getElementById(a.getAttribute('href').slice(1));
+      if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth'}); }
+    });
+  });
+
+  /* les boutons de menu déroulant ouvrent aussi la page */
+  document.querySelectorAll('.nav-trigger').forEach(function(b){
+    b.addEventListener('click', function(){ location.hash = '#/' + b.dataset.nav; b.blur(); });
+  });
+
+  /* ---------- barre et ligne d'allure au scroll ---------- */
+  var ticking = false;
+  function paint(){
+    ticking = false;
+    var y = window.scrollY, max = document.documentElement.scrollHeight - window.innerHeight;
+    var overHero = current === 'accueil' && y < window.innerHeight - 90;
+    nav.classList.toggle('over-hero', overHero);
+    pace.style.setProperty('--p', max > 0 ? Math.min(1, y / max).toFixed(4) : 0);
+    pace.classList.toggle('show', !overHero && y > 40);
+  }
+  function onScroll(){ if(!ticking){ ticking = true; requestAnimationFrame(paint); } }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+
+  /* ---------- menu mobile ---------- */
+  var sheet = document.getElementById('sheet'), burger = document.getElementById('burger'), closeBtn = document.getElementById('sheet-close');
+  function setSheet(o){
+    sheet.classList.toggle('open', o);
+    burger.setAttribute('aria-expanded', o);
+    document.body.style.overflow = o ? 'hidden' : '';
+    if(o) closeBtn.focus(); else if(document.activeElement && sheet.contains(document.activeElement)) burger.focus();
+  }
+  burger.addEventListener('click', function(){ setSheet(true); });
+  closeBtn.addEventListener('click', function(){ setSheet(false); });
+  sheet.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ setSheet(false); }); });
+
+  /* ---------- formulaire : envoi direct via Formspree ---------- */
+  var form = document.getElementById('contact-form'), status = document.getElementById('form-status');
+  var T = {
+    fr:{sending:'Envoi en cours…', ok:'Message envoyé. On te répond très vite.', err:"Le message n'est pas parti. Réessaie, ou écris directement à hello@goodpace.ch.", missing:'Il manque un champ, ou l\'adresse e-mail n\'est pas valide.'},
+    en:{sending:'Sending…', ok:'Message sent. We will get back to you soon.', err:'The message did not go through. Try again, or write to hello@goodpace.ch.', missing:'A field is missing, or the email address is not valid.'}
+  };
+  function say(key, cls){ status.textContent = T[lang][key]; status.className = 'form-status' + (cls ? ' ' + cls : ''); }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var f = e.target;
+    if(!f.checkValidity()){ say('missing','err'); var bad = f.querySelector(':invalid'); if(bad) bad.focus(); return; }
+    var subject = 'GOOD PACE — ' + f.who.value + ' — ' + f.first.value + ' ' + f.last.value;
+
+    if(!FORMSPREE_ID){            /* pas configuré : on passe par l'application mail */
+      var body = [
+        (lang === 'en' ? 'Name: ' : 'Nom : ') + f.first.value + ' ' + f.last.value,
+        'Email: ' + f.mail.value,
+        (lang === 'en' ? 'I am: ' : 'Je suis : ') + f.who.value,
+        '',
+        f.msg.value
+      ].join('\n');
+      location.href = 'mailto:hello@goodpace.ch?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      return;
+    }
+
+    var btn = f.querySelector('button[type="submit"]');
+    btn.disabled = true; say('sending');
+    var data = new FormData();
+    data.append('Prénom', f.first.value);
+    data.append('Nom', f.last.value);
+    data.append('email', f.mail.value);
+    data.append('Je suis', f.who.value);
+    data.append('Message', f.msg.value);
+    data.append('_subject', subject);
+    data.append('_gotcha', f._gotcha.value);
+
+    fetch('https://formspree.io/f/' + FORMSPREE_ID, {method:'POST', body:data, headers:{'Accept':'application/json'}})
+      .then(function(r){ if(!r.ok) throw new Error(r.status); say('ok','ok'); f.reset(); })
+      .catch(function(){ say('err','err'); })
+      .then(function(){ btn.disabled = false; });
+  });
+
+  /* ---------- panneau de réservation ---------- */
+  var booking = document.getElementById('booking'), frame = document.getElementById('booking-frame');
+  function openBooking(){
+    if(!frame.src) frame.src = BOOKING_URL;
+    booking.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    document.getElementById('booking-close').focus();
+  }
+  function closeBooking(){ booking.classList.remove('open'); document.body.style.overflow = ''; }
+  document.getElementById('booking-close').addEventListener('click', closeBooking);
+  booking.addEventListener('click', function(e){ if(e.target === booking) closeBooking(); });
+  document.querySelectorAll('[data-book]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      if(!BOOKING_URL) return;          /* pas encore configuré : le lien mène à la page Contact */
+      e.preventDefault(); openBooking();
+    });
+  });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key !== 'Escape') return;
+    if(booking.classList.contains('open')) closeBooking();
+    else if(sheet.classList.contains('open')) setSheet(false);
+  });
+
+  route();
+})();
+</script>
+
+</body>
+</html>
